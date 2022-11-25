@@ -1,0 +1,75 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
+:root {
+    --Bright-Blue: hsl(220, 98%, 61%);
+    --Check-Background: linear-gradient(hsl(192, 100%, 67%) to hsl(280, 87%, 65%));
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+    --Very-Light-Grayish-Blue: hsl(236, 33%, 92%);
+    --Light-Grayish-Blue: hsl(237, 14%, 26%);
+    --Dark-Grayish-Blue: hsl(236, 9%, 61%);
+    --Very-Dark-Grayish-Blue: hsl(235, 19%, 35%);
+     /* ### Dark Theme */
+    --Light-Grayish-Blue-hover: hsl(236, 33%, 92%);
+    --Dark-Grayish-Blue: hsl(234, 11%, 52%);
+    --Very-Dark-Grayish-Blue: hsl(233, 14%, 35%);
+    --Very-Dark-Grayish-Blue: hsl(237, 14%, 26%);
+}
+
+.dark-mode {
+    --Very-Light-Gray: hsl(235, 24%, 19%);
+    --Very-Light-Grayish-Blue: hsl(235, 21%, 11%);
+    --Light-Grayish-Blue: hsl(233, 11%, 84%);    
+}
+ul,li{
+    list-style: none;
+}
+h2 {
+    color: var(--Very-Light-Gray);
+    letter-spacing: 7px;
+    font-weight: 700;
+}
+p {
+    color: var(--Dark-Grayish-Blue);
+}
+
+ul li:hover .remove{
+    display: block;
+}
+ul li.hidden{
+    display: none;
+}
+input[type="radio"]:checked {
+    background: url(images/icon-check.svg), linear-gradient(to right,hsl(192, 100%, 67%) , hsl(280, 87%, 65%));
+    background-repeat: no-repeat;
+    background-position: center;
+    border:none;
+}
+
+@media(max-width:440px){
+    .ground-layer{
+        background-image: url(images/bg-mobile-light.jpg);
+    }
+    .input-container{
+        width: 20rem;
+    }
+    .textarea{
+        width: 20rem;
+    }
+    .input {
+        width: 20rem;
+    }
+    .details{
+        width: 20rem;
+    }
+    .details p {
+        font-size: 11px;
+    }
+}
