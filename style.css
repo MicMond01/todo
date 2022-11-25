@@ -1,4 +1,3 @@
-
 *{
     margin: 0;
     padding: 0;
@@ -36,37 +35,28 @@
     --Very-Light-Grayish-Blue: hsl(235, 21%, 11%);
     --Light-Grayish-Blue: hsl(233, 11%, 84%);    
 }
-
-
 ul,li{
     list-style: none;
 }
-
 h2 {
     color: var(--Very-Light-Gray);
     letter-spacing: 7px;
     font-weight: 700;
-    
 }
-
 p {
     color: var(--Dark-Grayish-Blue);
 }
-
 .main {
     background-color: var(--Very-Light-Grayish-Blue);
     min-height: 100vh;
     transition: all 3s ease;
-
 }
-
 .container {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
 .ground-layer {
     background-image: url(images/bg-desktop-light.jpg);
     width: 100%;
@@ -75,37 +65,29 @@ p {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 .main-body {
     position: absolute;
     top: 20%;
-    /* width: 50%; */
 }
-
 .top {
     display: flex;
     justify-content: space-between;
     margin-bottom: 2rem;
 }
-
 .bottom {
     background-color: var(--Very-Light-Gray);
     border-radius: 10px;
 }
-
 .input-container {
     width: 20rem;
     position: relative;
     height: 100%;
 }
-
 .input-container .circle {
     position: absolute;
     margin-top: 0.9rem;
     margin-left: 1rem;
-    /* top: 50%; */
 }
-
 .input {
     background-color: var(--Very-Light-Gray);
     color: var(--Light-Grayish-Blue);
@@ -116,17 +98,14 @@ p {
     padding-top: 1rem ;
     padding-left: 3rem;
 }
-
 textarea::placeholder {
     font-family: 'Josefin Sans', sans-serif;
 }
-
 textarea {
     resize: none;
     overflow: hidden;
     min-height: 2.5rem;
-  }
-
+}
 .input:focus {
     outline: none;
 }
@@ -134,7 +113,6 @@ textarea {
     background-color: var(--Very-Light-Gray);
 
 }
-
 .textarea {
     width: 25rem;
     min-height: 2.5rem;
@@ -146,22 +124,18 @@ textarea {
     position: relative;
     padding: 1rem 3rem;
 }
-
 .textarea .remove {
     cursor: pointer;
     position: absolute;
     right: 5%;
 }
-
 .textarea .checkbox {
     position: absolute;
     left: 4%;
 }
-
 .textarea span{
     color: var(--Light-Grayish-Blue);
 }
-
 .circle {
     border: 1px solid var(--Very-Dark-Grayish-Blue);
     border-radius: 50%;
@@ -169,7 +143,6 @@ textarea {
     height: 1rem;
     cursor: pointer;
 }
-
 .enter{
     background-image: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
     position: relative;
@@ -177,12 +150,9 @@ textarea {
     align-items: center;
     justify-content: center;
 }
-
 .enter img {
     position: absolute;
 }
-
-
 .details {
     display: flex;
     justify-content: space-between;
@@ -191,7 +161,6 @@ textarea {
     font-weight: 400;
     padding: 1rem;
 }
-
 .remove{
     background: url(images/icon-cross.svg) no-repeat;
     width: 15px;
@@ -199,23 +168,18 @@ textarea {
     cursor: pointer;
     display: none;
 }
-
 ul li:hover .remove{
     display: block;
 }
-
 ul li.hidden{
     display: none;
 }
-
 input[type="radio"]:checked {
     background: url(images/icon-check.svg), linear-gradient(to right,hsl(192, 100%, 67%) , hsl(280, 87%, 65%));
     background-repeat: no-repeat;
     background-position: center;
     border:none;
-
 }
-
 .display input {
     -webkit-appearance: none;
     border: 1px solid hsl(234, 11%, 52%);
@@ -225,7 +189,6 @@ input[type="radio"]:checked {
     margin-right: 10px;
     cursor: pointer;    
 }
-
 .display input:checked{
     background: url(images/icon-check.svg), linear-gradient(to right,hsl(192, 100%, 67%) , hsl(280, 87%, 65%));
     background-repeat: no-repeat;
@@ -233,20 +196,16 @@ input[type="radio"]:checked {
     border:none;
     border-radius: 50%;
 }
-
 .display input:checked ~ .text{
   text-decoration: line-through;
   color:hsl(234, 11%, 52%);
 }
-
- .filter {
+.filter {
     display: flex;
 }
-
 .filter :not(:last-child) {
     padding-right: 7px;
 }
-
 .details input[type="radio"]{
     display: none;
 }
@@ -256,44 +215,34 @@ input[type="radio"]:checked {
 .details input[type="radio"]:checked ~ span{
   color: var(--Bright-Blue);
 }
-
 .details p {
     font-size: 13px;
     cursor: pointer;
 }
-
 .active {
     color: var(--Bright-Blue);
     font-weight: 700;
 }
-
 p:hover {
     color: var( --Very-Dark-Grayish-Blue);
     font-weight: 700;
 }
-
 @media(max-width:440px){
-
     .ground-layer{
         background-image: url(images/bg-mobile-light.jpg);
     }
-
     .input-container{
         width: 20rem;
     }
-
     .textarea{
         width: 20rem;
     }
-
     .input {
         width: 20rem;
     }
-
     .details{
         width: 20rem;
     }
-
     .details p {
         font-size: 11px;
     }
